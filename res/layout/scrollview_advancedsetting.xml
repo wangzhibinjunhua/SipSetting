@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview_advancedsetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <LinearLayout
+            android:id="@+id/ll_proxy_server_address"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proxy_server_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_proxy_server_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_proxy_server_port"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proxy_server_port"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_proxy_server_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_proxy_server_name"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proxy_server_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_proxy_server_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_proxy_server_password"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proxy_server_password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_proxy_server_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_backup_proxy_server_address"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backup_proxy_server_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_backup_proxy_server_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_backup_proxy_server_port"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backup_proxy_server_port"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_backup_proxy_server_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5060"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_server_name"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/server_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_server_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5060"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <LinearLayout
+            android:id="@+id/ll_server_register_time"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/server_register_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_server_register_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3600"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_DTMF_type"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DTMF_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_DTMF_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RFC2833"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <RelativeLayout
+            android:id="@+id/ll_use_STUN"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/use_STUN"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_use_STUN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_forbid_server_call"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forbid_server_call"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_forbid_server_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_BLFList"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_BLFList"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_BLFList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_BLFList_number"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BLFList_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_BLFList_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_session_timer"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_session_timer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_session_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_session_timeout"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/session_timeout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_session_timeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <LinearLayout
+            android:id="@+id/ll_specification_version"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/specification_version"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_specification_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RFC 3261"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_anonymity_call_specification"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anonymity_call_specification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_anonymity_call_specification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已停用"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_transport_protocols"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transport_protocols"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_transport_protocols"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UDP"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_Rport"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_Rport"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_Rport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_PRACK"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_PRACK"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_PRACK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_start_Tel_type_call"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_Tel_type_call"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_start_Tel_type_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <LinearLayout
+            android:id="@+id/ll_caller_identification"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/caller_identification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_caller_identification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RPID-PAI-FROM"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_compatible_special_server"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/compatible_special_server"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_compatible_special_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_allow_URI_transition"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/allow_URI_transition"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_allow_URI_transition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_show_name_quotationmark"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_name_quotationmark"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_show_name_quotationmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline" />
+        
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_start_voice_message"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_voice_message"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_start_voice_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_DNS_SRV"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_DNS_SRV"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_DNS_SRV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_start_preview"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_preview"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <Switch
+                android:id="@+id/switch_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="20dp"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/track" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_preview_pattern"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preview_pattern"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_preview_pattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

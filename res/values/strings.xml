@@ -1,0 +1,54 @@
+<resources>
+
+    <string name="app_name">设置</string>
+    <string name="siproute_title">SIP设定</string>
+    <string name="siproute">线路</string>
+    <string name="siproute_1">线路1</string>
+    <string name="siproute_2">线路2</string>
+    <string name="siproute_3">线路3</string>
+    <string name="siproute_4">线路4</string>
+
+    <!-- scrollview_route -->
+    <string name="register_state">注册状态</string>
+    <string name="register_start">开启注册</string>
+    <string name="server_address">服务器地址</string>
+    <string name="server_port">服务器端口</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="phone">电话号码</string>
+    <string name="show_name">显示名称</string>
+    <string name="local_domainname">本地域名</string>
+    <string name="transport">传输类型</string>
+    <string name="advanced_setting">高级设置</string>
+
+    <!-- scrollview_advancedsetting -->
+    <string name="proxy_server_address">代理服务器地址</string>
+    <string name="proxy_server_port">代理服务器端口</string>
+    <string name="proxy_server_name">代理服务器账号</string>
+    <string name="proxy_server_password">代理服务器密码</string>
+    <string name="backup_proxy_server_address">备份代理服务器地址</string>
+    <string name="backup_proxy_server_port">备份代理服务器端口</string>
+    <string name="server_name">服务器名称</string>
+    <string name="server_register_time">服务器注册时限</string>
+    <string name="DTMF_type">DTMF类型</string>
+    <string name="use_STUN">使用STUN</string>
+    <string name="forbid_server_call">禁止服务呼叫</string>
+    <string name="open_BLFList">开启BLF List</string>
+    <string name="BLFList_number">BLF List号码</string>
+    <string name="open_session_timer">开启会话计时</string>
+    <string name="session_timeout">会话超时时间</string>
+    <string name="specification_version">规范版本</string>
+    <string name="anonymity_call_specification">匿名呼叫规范版本</string>
+    <string name="transport_protocols">传输协议</string>
+    <string name="open_Rport">开启Rport</string>
+    <string name="open_PRACK">开启PRACK</string>
+    <string name="start_Tel_type_call">启用Tel格式呼叫</string>
+    <string name="caller_identification">来电显示类型</string>
+    <string name="compatible_special_server">配置兼容特殊服务器</string>
+    <string name="allow_URI_transition">允许URI转换</string>
+    <string name="show_name_quotationmark">配置显示名称加引号</string>
+    <string name="start_voice_message">启用语音留言</string>
+    <string name="open_DNS_SRV">开启DNS SRV</string>
+    <string name="start_preview">启用预览</string>
+    <string name="preview_pattern">预览模式</string>
+</resources>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview_route"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <LinearLayout
+            android:id="@+id/ll_registerstate"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_state"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_registerstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未注册"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/rl_registerstart"
+            style="@style/scroll_linearlayout" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <Switch
+                android:id="@+id/switch_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:switchMinWidth="20dp"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/track" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_server_address"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/server_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_serveraddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务器地址"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_server_port"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/server_port"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_serverport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5060"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_name"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_password"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_phone"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="110"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_show_name"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_showname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_local_domainname"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/local_domainname"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_localdomainname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地域名"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_transport"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transport"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_transport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TCP"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/rl_advanced_setting"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/advanced_setting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_left" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

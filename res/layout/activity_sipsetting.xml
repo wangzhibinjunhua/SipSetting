@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tape_title"
+        layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+            
+            <View style="@style/divideline" />
+
+            <View style="@style/divideline2" />
+
+            <TextView
+                android:id="@+id/siproute1"
+                style="@style/scroll_linearlayout"
+                android:text="@string/siproute_1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline3" />
+
+            <TextView
+                android:id="@+id/siproute2"
+                style="@style/scroll_linearlayout"
+                android:text="@string/siproute_2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline3" />
+
+            <TextView
+                android:id="@+id/siproute3"
+                style="@style/scroll_linearlayout"
+                android:text="@string/siproute_3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline3" />
+
+            <TextView
+                android:id="@+id/siproute4"
+                style="@style/scroll_linearlayout"
+                android:text="@string/siproute_4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
