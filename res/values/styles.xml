@@ -39,7 +39,7 @@
 
     <style name="scroll_linearlayout">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:layout_height">@dimen/dp_60</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:paddingLeft">@dimen/dp_10</item>
         <item name="android:paddingRight">@dimen/dp_10</item>

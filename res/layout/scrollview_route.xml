@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text="未注册"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -82,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:text="服务器地址"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:text="5060"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -128,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:text="name"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -151,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:text="123456"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -174,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:text="110"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -197,7 +197,7 @@
                 android:layout_height="wrap_content"
                 android:text="name"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -220,7 +220,7 @@
                 android:layout_height="wrap_content"
                 android:text="本地域名"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -243,7 +243,7 @@
                 android:layout_height="wrap_content"
                 android:text="TCP"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />

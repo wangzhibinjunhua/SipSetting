@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text="null"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:text="null"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:text="null"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -102,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:text="null"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -125,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:text="null"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -148,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:text="5060"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -171,7 +171,7 @@
                 android:layout_height="wrap_content"
                 android:text="5060"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline" />
@@ -196,7 +196,7 @@
                 android:layout_height="wrap_content"
                 android:text="3600"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -219,7 +219,7 @@
                 android:layout_height="wrap_content"
                 android:text="RFC2833"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline" />
@@ -307,7 +307,7 @@
                 android:layout_height="wrap_content"
                 android:text="null"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -351,7 +351,7 @@
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline" />
@@ -376,7 +376,7 @@
                 android:layout_height="wrap_content"
                 android:text="RFC 3261"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -399,7 +399,7 @@
                 android:layout_height="wrap_content"
                 android:text="已停用"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -422,7 +422,7 @@
                 android:layout_height="wrap_content"
                 android:text="UDP"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -510,7 +510,7 @@
                 android:layout_height="wrap_content"
                 android:text="RPID-PAI-FROM"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
 
         <View style="@style/divideline3" />
@@ -668,7 +668,7 @@
                 android:layout_height="wrap_content"
                 android:text="200"
                 android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_12" />
+                android:textSize="@dimen/sp_16" />
         </LinearLayout>
     </LinearLayout>
 

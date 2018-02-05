@@ -16,25 +16,60 @@
         android:textColor="@color/black"
         android:textSize="@dimen/sp_18" />
 
-    <EditText
-        android:id="@+id/edit_text"
+    <LinearLayout
+        android:id="@+id/ll_editinput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dp_5"
-        android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"
-        android:layout_marginTop="@dimen/dp_20"
-        android:background="@null"
-        android:hint="请输入"
-        android:textColor="@color/font_color_gray"
-        android:textSize="@dimen/sp_16" />
+        android:orientation="vertical" >
 
-    <View
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@null"
+            android:hint="请输入"
+            android:textColor="@color/font_color_gray"
+            android:textSize="@dimen/sp_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@color/gray_ccc" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_transport"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="@dimen/dp_10"
-        android:layout_marginRight="@dimen/dp_10"
-        android:background="@color/gray_ccc" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_udp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/UDP" />
+
+        <RadioButton
+            android:id="@+id/rb_tcp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TCP" />
+
+        <RadioButton
+            android:id="@+id/rb_tls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TLS" />
+    </RadioGroup>
 
     <View
         android:layout_width="match_parent"

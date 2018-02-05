@@ -131,7 +131,7 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 		tv_password.setText(SystemShare.getSettingString(mContext, sp_name, Constant.password));
 		tv_phone.setText(SystemShare.getSettingString(mContext, sp_name, Constant.phone));
 		tv_showname.setText(SystemShare.getSettingString(mContext, sp_name, Constant.showname));
-		tv_transport.setText(SystemShare.getSettingString(mContext, sp_name, Constant.transport));
+		tv_transport.setText(SystemShare.getSettingString(mContext, sp_name, Constant.transport, "UDP"));
 		tv_localdomainname.setText(SystemShare.getSettingString(mContext, sp_name, Constant.localdomainname));
 	}
 
@@ -170,7 +170,7 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 		
 			break;
 		case R.id.ll_transport: // 传输类型
-			DialogUtil.showdialog(mContext, R.string.transport, tv_transport, sp_name, Constant.transport);
+			DialogUtil.showdialog(mContext, R.string.transport, tv_transport, sp_name, tv_transport.getText().toString(), 1);
 			break;
 		case R.id.rl_advanced_setting: // 高级设置
 			into_advanced();
