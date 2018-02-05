@@ -1,10 +1,13 @@
 package com.wzb.setting.activity;
 
 import com.wzb.setting.R;
+import com.wzb.setting.util.Constant;
+import com.wzb.setting.util.SystemShare;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -50,6 +53,44 @@ public class SIPSettingActivity extends BaseActivity implements OnClickListener 
 		sip2.setOnClickListener(this);
 		sip3.setOnClickListener(this);
 		sip4.setOnClickListener(this);
+	}
+	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		refreshState();
+	}
+	
+	private String getSipLineState(int line){
+		String info="";
+		String sp_name=Constant.ROUTE1;
+		if (line == 1) {
+			sp_name = Constant.ROUTE1;
+		} else if (line == 2) {
+			sp_name = Constant.ROUTE2;
+		} else if (line == 3) {
+			sp_name = Constant.ROUTE3;
+		} else if (line == 4) {
+			sp_name = Constant.ROUTE4;
+		}
+		info=	SystemShare.getSettingString(mContext, sp_name, Constant.openregister, "未注册");
+		String username=SystemShare.getSettingString(mContext, sp_name, Constant.username, "");
+		String domain=SystemShare.getSettingString(mContext, sp_name, Constant.serveraddress, "");
+		String sip="";
+		if(!TextUtils.isEmpty(username) && !TextUtils.isEmpty(domain)){
+			sip="sip:"+username+"@"+domain;
+		}
+		info=info+"("+sip+")";
+		return info;
+	}
+	
+	private void refreshState(){
+		
+		sip1.setText("线路1 ----    "+getSipLineState(1));
+		sip2.setText("线路2 ----    "+getSipLineState(2));
+		sip3.setText("线路3 ----    "+getSipLineState(3));
+		sip4.setText("线路4 ----    "+getSipLineState(4));
 	}
 
 	@Override
