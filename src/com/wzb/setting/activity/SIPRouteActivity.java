@@ -53,6 +53,7 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 	String domain;
 	String transport;
 	String displayname;
+	String port="";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -121,7 +122,9 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 			sp_name = Constant.ROUTE4;
 		}
 		tv_registerstate.setText(SystemShare.getSettingString(mContext, sp_name, Constant.openregister, "未注册"));
+		switch_register.setOnCheckedChangeListener(null);
 		switch_register.setChecked(SystemShare.getSettingBoolean(mContext, sp_name, Constant.registerstart, false));
+		switch_register.setOnCheckedChangeListener(this);
 		tv_serveraddress.setText(SystemShare.getSettingString(mContext, sp_name, Constant.serveraddress));
 		tv_serverport.setText(SystemShare.getSettingString(mContext, sp_name, Constant.serverport));
 		tv_username.setText(SystemShare.getSettingString(mContext, sp_name, Constant.username));
@@ -164,6 +167,7 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 		case R.id.ll_local_domainname: // 本地域名
 			DialogUtil.showdialog(mContext, R.string.local_domainname, tv_localdomainname, sp_name,
 					Constant.localdomainname);
+		
 			break;
 		case R.id.ll_transport: // 传输类型
 			DialogUtil.showdialog(mContext, R.string.transport, tv_transport, sp_name, Constant.transport);
@@ -188,6 +192,7 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 				domain = tv_serveraddress.getText().toString();
 				transport = tv_transport.getText().toString();
 				displayname = tv_showname.getText().toString();
+				port=tv_serverport.getText().toString();
 				if (username.equals("") && password.equals("") && domain.equals("") && transport.equals("")
 						&& displayname.equals("")) {
 					ToastUtil.showToast(mContext, "数值不能为空！", 1);
@@ -259,7 +264,9 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 				}
 				Log.e("onActivityResult", log);
 				ToastUtil.showShortToast(mContext, toast);
+				switch_register.setOnCheckedChangeListener(null);
 				switch_register.setChecked(isregister);
+				switch_register.setOnCheckedChangeListener(this);
 				// 保存数值
 				SystemShare.setSettingBoolean(mContext, sp_name, Constant.registerstart, isregister);
 				SystemShare.setSettingString(mContext, sp_name, Constant.openregister, "已注册");
@@ -268,6 +275,7 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 				SystemShare.setSettingString(mContext, sp_name, Constant.serveraddress, domain);
 				SystemShare.setSettingString(mContext, sp_name, Constant.transport, transport);
 				SystemShare.setSettingString(mContext, sp_name, Constant.showname, displayname);
+				SystemShare.setSettingString(mContext, sp_name, Constant.serverport, port);
 			}
 		}
 	}
