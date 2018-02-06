@@ -7,7 +7,7 @@ public class Constant {
 	public static final String ROUTE2 = "route2";
 	public static final String ROUTE3 = "route3";
 	public static final String ROUTE4 = "route4";
-	
+	public static final String sipuri = "sipuri";
 	public static final String openregister = "openregister"; // 注册状态
 	public static final String registerstart = "registerstart"; // 开启注册
 	public static final String serveraddress = "serveraddress"; // 服务器地址

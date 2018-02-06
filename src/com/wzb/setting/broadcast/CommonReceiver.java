@@ -1,11 +1,14 @@
 package com.wzb.setting.broadcast;
 
 import com.wzb.setting.interf.WApplication;
+import com.wzb.setting.util.Constant;
 import com.wzb.setting.util.LogUtil;
+import com.wzb.setting.util.SystemShare;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.text.TextUtils;
 import android.util.Log;
 
 public class CommonReceiver extends BroadcastReceiver{
@@ -37,6 +40,16 @@ public class CommonReceiver extends BroadcastReceiver{
 			WApplication.sp.set("eth_gate", intent.getStringExtra("gate"));
 		}else if(action.equals("com.android.custom.net_dhcp")){
 			WApplication.sp.set("eth_type", "DHCP");
+		}else if(action.equals("android.intent.action.BOOT_COMPLETED")){
+			String sipUri1=SystemShare.getSettingString(context, Constant.ROUTE1, Constant.sipuri,"");
+			String sipUri2=SystemShare.getSettingString(context, Constant.ROUTE2, Constant.sipuri,"");
+			String sipUri3=SystemShare.getSettingString(context, Constant.ROUTE3, Constant.sipuri,"");
+			String sipUri4=SystemShare.getSettingString(context, Constant.ROUTE4, Constant.sipuri,"");
+			android.os.SystemProperties.set("custom.lp.sip1", sipUri1);
+			android.os.SystemProperties.set("custom.lp.sip2", sipUri2);
+			android.os.SystemProperties.set("custom.lp.sip3", sipUri3);
+			android.os.SystemProperties.set("custom.lp.sip4", sipUri4);
+			
 		}
 	}
 

@@ -12,6 +12,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -193,8 +194,9 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 				transport = tv_transport.getText().toString();
 				displayname = tv_showname.getText().toString();
 				port=tv_serverport.getText().toString();
-				if (username.equals("") && password.equals("") && domain.equals("") && transport.equals("")
-						&& displayname.equals("")) {
+				if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password) 
+						|| TextUtils.isEmpty(domain) || TextUtils.isEmpty(transport)
+						|| TextUtils.isEmpty(port)) {
 					ToastUtil.showToast(mContext, "数值不能为空！", 1);
 					switch_register.setChecked(false);
 				} else {
@@ -276,6 +278,18 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 				SystemShare.setSettingString(mContext, sp_name, Constant.transport, transport);
 				SystemShare.setSettingString(mContext, sp_name, Constant.showname, displayname);
 				SystemShare.setSettingString(mContext, sp_name, Constant.serverport, port);
+				//
+				String sipUri="sip:"+username+"@"+domain;
+				SystemShare.setSettingString(mContext, sp_name, Constant.sipuri, sipUri);
+				if(route==1){
+					android.os.SystemProperties.set("custom.lp.sip1", sipUri);
+				}else if(route==2){
+					android.os.SystemProperties.set("custom.lp.sip2", sipUri);
+				}else if(route==3){
+					android.os.SystemProperties.set("custom.lp.sip3", sipUri);
+				}else if(route==4){
+					android.os.SystemProperties.set("custom.lp.sip4", sipUri);
+				}
 			}
 		}
 	}
