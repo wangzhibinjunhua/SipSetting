@@ -49,6 +49,7 @@ public class CommonReceiver extends BroadcastReceiver{
 			android.os.SystemProperties.set("custom.lp.sip2", sipUri2);
 			android.os.SystemProperties.set("custom.lp.sip3", sipUri3);
 			android.os.SystemProperties.set("custom.lp.sip4", sipUri4);
+			context.sendBroadcast(new Intent("com.custom.lp.SIP_CHANGED"));
 			
 		}
 	}

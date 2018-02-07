@@ -290,6 +290,7 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 				}else if(route==4){
 					android.os.SystemProperties.set("custom.lp.sip4", sipUri);
 				}
+				sendBroadcast(new Intent("com.custom.lp.SIP_CHANGED"));
 			}
 		}
 	}
