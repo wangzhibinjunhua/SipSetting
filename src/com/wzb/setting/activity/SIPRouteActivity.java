@@ -198,7 +198,9 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 						|| TextUtils.isEmpty(domain) || TextUtils.isEmpty(transport)
 						|| TextUtils.isEmpty(port)) {
 					ToastUtil.showToast(mContext, "数值不能为空！", 1);
+					switch_register.setOnCheckedChangeListener(null);
 					switch_register.setChecked(false);
+					switch_register.setOnCheckedChangeListener(this);
 				} else {
 					Intent intent = new Intent();
 					ComponentName comp = new ComponentName("com.android.dialer",
@@ -212,6 +214,13 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 					intent.putExtra("displayname", displayname); // 显示名称
 					startActivityForResult(intent, 1000);
 				}
+			}else{
+				username = tv_username.getText().toString();
+				domain = tv_serveraddress.getText().toString();
+				String sipUri="sip:"+username+"@"+domain;
+				Intent intent=new Intent("com.custom.lp.DEL_ACCOUNT");
+				intent.putExtra("sipurl", sipUri);
+				mContext.sendBroadcast(intent);
 			}
 			break;
 
