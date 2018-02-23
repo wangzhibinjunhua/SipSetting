@@ -80,7 +80,7 @@
                     android:layout_height="48dp"
                     android:layout_marginLeft="70dp"
                     android:gravity="center_vertical"
-                    android:text="以太网"
+                    android:text="以太网和USB设定"
                     android:textSize="18sp" />
             </LinearLayout>
 

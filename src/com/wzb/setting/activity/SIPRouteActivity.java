@@ -221,6 +221,16 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 				Intent intent=new Intent("com.custom.lp.DEL_ACCOUNT");
 				intent.putExtra("sipurl", sipUri);
 				mContext.sendBroadcast(intent);
+				if(route==1){
+					android.os.SystemProperties.set("custom.lp.sip1", "");
+				}else if(route==2){
+					android.os.SystemProperties.set("custom.lp.sip2", "");
+				}else if(route==3){
+					android.os.SystemProperties.set("custom.lp.sip3", "");
+				}else if(route==4){
+					android.os.SystemProperties.set("custom.lp.sip4", "");
+				}
+				sendBroadcast(new Intent("com.custom.lp.SIP_CHANGED"));
 			}
 			break;
 
