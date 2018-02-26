@@ -24,7 +24,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	private TextView titleView;
 	private Context mContext;
 	
-	private TextView tv_wlan,tv_eth,tv_sip,tv_more_setting,tv_advancenet;
+	private TextView tv_wlan,tv_eth,tv_sip,tv_more_setting,tv_advancenet, tv_call;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +76,10 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 			tv_sip.setClickable(true);
 			tv_sip.setOnClickListener(this);
 			
+			tv_call = (TextView) findViewById(R.id.tv_call);
+			tv_call.setClickable(true);
+			tv_call.setOnClickListener(this);
+			
 			tv_more_setting=(TextView)findViewById(R.id.tv_more_setting);
 			tv_more_setting.setClickable(true);
 			tv_more_setting.setOnClickListener(this);
@@ -103,6 +107,9 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		case R.id.tv_sip:
 			show_sip_setting();
 			break;
+		case R.id.tv_call:
+			show_call_setting();
+			break;
 		case R.id.tv_advancenet:
 			show_advancenet();
 			break;
@@ -127,6 +134,11 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 //        intent.setComponent(cn);
         mContext.startActivity(intent);
 
+	}
+	
+	private void show_call_setting() {
+		Intent intent = new Intent(MainActivity.this, CallSettingActivity.class);
+		mContext.startActivity(intent);
 	}
 	
 	private void show_eth(){

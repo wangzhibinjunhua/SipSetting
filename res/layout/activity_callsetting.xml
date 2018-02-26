@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View style="@style/divideline" />
+
+            <View style="@style/divideline2" />
+
+            <TextView
+                android:id="@+id/tv_service1"
+                style="@style/scroll_linearlayout"
+                android:text="@string/textview_1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline3" />
+
+            <TextView
+                android:id="@+id/tv_service2"
+                style="@style/scroll_linearlayout"
+                android:text="@string/textview_2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline3" />
+
+            <TextView
+                android:id="@+id/tv_service3"
+                style="@style/scroll_linearlayout"
+                android:text="@string/textview_3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline3" />
+            
+            <TextView
+                android:id="@+id/tv_service4"
+                style="@style/scroll_linearlayout"
+                android:text="@string/textview_4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline3" />
+
+            <TextView
+                android:id="@+id/tv_function"
+                style="@style/scroll_linearlayout"
+                android:text="@string/textview_5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline3" />
+
+            <TextView
+                android:id="@+id/tv_dnd"
+                style="@style/scroll_linearlayout"
+                android:text="@string/textview_6"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline3" />
+
+            <TextView
+                android:id="@+id/tv_collect"
+                style="@style/scroll_linearlayout"
+                android:text="@string/textview_7"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <View style="@style/divideline" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

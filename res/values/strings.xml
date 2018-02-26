@@ -13,6 +13,8 @@
     <string name="register_start">开启注册</string>
     <string name="server_address">服务器地址</string>
     <string name="server_port">服务器端口</string>
+    <string name="backserver_address">备用服务器地址</string>
+    <string name="backserver_port">备用服务器端口</string>
     <string name="user_name">用户名</string>
     <string name="password">密码</string>
     <string name="phone">电话号码</string>
@@ -55,4 +57,90 @@
     <string name="UDP">UDP</string>
     <string name="TCP">TCP</string>
     <string name="TLS">TLS</string>
+
+    <!-- 呼叫设置 -->
+    <string name="callsetting_title">呼叫设置</string>
+    <string name="service_title">服务</string>
+    <string name="textview_1">服务1</string>
+    <string name="textview_2">服务2</string>
+    <string name="textview_3">服务3</string>
+    <string name="textview_4">服务4</string>
+    <string name="textview_5">功能</string>
+    <string name="textview_6">DND</string>
+    <string name="textview_7">收号规则</string>
+    <string name="auto_switchover">启用自动转接</string>
+    <string name="auto_answertime">自动接听等候时间(0~120)</string>
+    <string name="open_unconditional">开启无条件前转</string>
+    <string name="open_busy">开启遇忙前转</string>
+    <string name="open_noanswer">开启无应答前转</string>
+    <string name="unconditional_turn">无条件前转号码</string>
+    <string name="busy_turn">遇忙前转号码</string>
+    <string name="noanswer_turn">无应答前转号码</string>
+    <string name="noanswer_overtime">无应答转移超时时间(0~120)</string>
+    <string name="open_hotline">开启热线</string>
+    <string name="hotline_number">热线号码</string>
+    <string name="hotline_delaytime">热线延迟时间(0~9)</string>
+    <string name="open_misscall">开启未接来电记录</string>
+    <string name="notregister_call">允许不注册呼叫</string>
+    <string name="voicemail_number">语音信箱号码</string>
+    <string name="route_ring">选择线路铃声</string>
+    <string name="show_calltype">来电显示类型</string>
+    <string name="open_userphone">开启User=phone</string>
+
+    <!-- 功能 -->
+    <string name="function_title">功能</string>
+    <string name="callwait">开启呼叫等待</string>
+    <string name="calldivert">开启呼叫转移</string>
+    <string name="halfattend_turn">开启半出席转</string>
+    <string name="auto_hangup">免提自动挂断</string>
+    <string name="auto_hanguptime">免提自动挂断时间(0~30)</string>
+    <string name="open_threeparty">开启三方通话</string>
+    <string name="headsetring">耳麦振铃</string>
+    <string name="auto_Earphone">自动选择耳机</string>
+    <string name="hideDTMF">隐藏DTMF</string>
+    <string name="forbid_callout">禁止呼出</string>
+    <string name="call_history">启用通话记录</string>
+    <string name="calloutside">默认呼叫外线</string>
+    <string name="callmode">默认呼叫模式</string>
+    <string name="answermode">默认接听模式</string>
+    <string name="IPcall">允许IP通话</string>
+    <string name="urgent_number">配置紧急号码</string>
+    <string name="open_MultiLine">开启Multi Line</string>
+    <string name="limit_ActiveURI">限制Active URI来源IP</string>
+    <string name="callwait_voice">开启呼叫等待音</string>
+    <string name="callDTMF_voice">通话DTMF提示音</string>
+    <string name="dialDTMF_voice">拨号DTMF提示音</string>
+    <string name="passwordcall">密码拨打</string>
+    <string name="passwordcall_prefix">密码拨打前缀</string>
+    <string name="passwordlong">密码长度(0~31)</string>
+    <string name="finishcall">通话完成</string>
+    <string name="auto_redial">自动重拨</string>
+    <string name="auto_redial_interval">自动重拨间隔(1~180)</string>
+    <string name="auto_redial_count">自动重拨次数(1~100)</string>
+    <string name="talkbackmode">对讲模式</string>
+    <string name="talkbackmode_mute">对讲模式静音</string>
+    <string name="talkbackmode_ring">对讲模式响铃</string>
+    <string name="secondtalkback_answer">第二路对讲接听</string>
+    <string name="busy_responsecode">遇忙响应码</string>
+    <string name="hide_localcode">隐藏本地区号</string>
+    <string name="country_code">国家代码</string>
+    <string name="region_code">地区代码</string>
+    <string name="SIP_number">使用SIP编号方案</string>
+    <string name="update_callnumber">更新呼叫号码</string>
+    <string name="onekey_transfer">一键转移</string>
+    <string name="videomode">接收视频模式</string>
+    <string name="three_callprocedure">开启第三方通话程序</string>
+    <string name="three_callsoftware">摘机打开第三方通话软件</string>
+
+    <!-- 收号规则 -->
+    <string name="collectrule_title">收号规则</string>
+    <string name="ending_collect">以#结尾收号</string>
+    <string name="overtime_collect">超时收号(3~30)</string>
+    <string name="overtime_collectrange">超时收号范围(3~30)</string>
+    <string name="ending_turn">以#结尾盲转</string>
+    <string name="hang_turn">挂机盲转</string>
+    <string name="hang_attendturn">挂机出席转</string>
+    <string name="meeting_hang_attendturn">会议挂机出席转</string>
+    <string name="custom_callrule">自定义拨号规则</string>
+
 </resources>

@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_callwait"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/callwait"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_callwait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_calldivert"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calldivert"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_calldivert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_halfattend_turn"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/halfattend_turn"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_halfattend_turn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_auto_hangup"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_hangup"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_auto_hangup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_auto_hanguptime"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_hanguptime"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_auto_hanguptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_threeparty"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_threeparty"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_threeparty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_headsetring"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/headsetring"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_headsetring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_auto_Earphone"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_Earphone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_auto_Earphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <LinearLayout
+            android:id="@+id/ll_hideDTMF"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hideDTMF"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_hideDTMF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正常显示"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_forbid_callout"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forbid_callout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_forbid_callout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_call_history"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_history"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_call_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_calloutside"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calloutside"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_calloutside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Line1"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_callmode"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/callmode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_callmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="语音"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_answermode"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answermode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_answermode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="视频"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_IPcall"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/IPcall"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_IPcall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_urgent_number"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/urgent_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_urgent_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="110"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_MultiLine"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_MultiLine"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_MultiLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_limit_ActiveURI"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/limit_ActiveURI"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_limit_ActiveURI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_callwait_voice"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/callwait_voice"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_callwait_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_callDTMF_voice"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/callDTMF_voice"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_callDTMF_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_dialDTMF_voice"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialDTMF_voice"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_dialDTMF_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_passwordcall"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/passwordcall"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_passwordcall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_passwordcall_prefix"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/passwordcall_prefix"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_passwordcall_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_passwordlong"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/passwordlong"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_passwordlong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_finishcall"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/finishcall"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_finishcall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_auto_redial"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_redial"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_auto_redial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_auto_redial_interval"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_redial_interval"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_auto_redial_interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_auto_redial_count"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_redial_count"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_auto_redial_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_talkbackmode"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/talkbackmode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_talkbackmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_talkbackmode_mute"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/talkbackmode_mute"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_talkbackmode_mute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_talkbackmode_ring"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/talkbackmode_ring"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_talkbackmode_ring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_secondtalkback_answer"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/secondtalkback_answer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_secondtalkback_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <LinearLayout
+            android:id="@+id/ll_busy_responsecode"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/busy_responsecode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_busy_responsecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="486(正忙)"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_hide_localcode"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hide_localcode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_hide_localcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_country_code"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_region_code"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/region_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_region_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_SIP_number"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SIP_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_SIP_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_update_callnumber"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_callnumber"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_update_callnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_onekey_transfer"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/onekey_transfer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_onekey_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不启用"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_videomode"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/videomode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_videomode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手动接收视频"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_three_callprocedure"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three_callprocedure"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_three_callprocedure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_three_callsoftware"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three_callsoftware"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_three_callsoftware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/scrollview_route"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
@@ -10,284 +9,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
-        
+
         <View style="@style/divideline" />
 
         <View style="@style/divideline2" />
 
-        <LinearLayout
-            android:id="@+id/ll_registerstate"
+        <RelativeLayout
+            android:id="@+id/ll_auto_switchover"
             style="@style/scroll_linearlayout"
             android:orientation="vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/register_state"
+                android:text="@string/auto_switchover"
                 android:textColor="@color/black"
                 android:textSize="@dimen/sp_18" />
 
-            <TextView
-                android:id="@+id/tv_registerstate"
+            <CheckBox
+                android:id="@+id/cb_auto_switchover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="未注册"
-                android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_16" />
-        </LinearLayout>
-
-        <View style="@style/divideline3" />
-
-        <RelativeLayout
-            android:id="@+id/rl_registerstart"
-            style="@style/scroll_linearlayout" >
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/register_start"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_18" />
-
-            <Switch
-                android:id="@+id/switch_register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:switchMinWidth="20dp"
-                android:textOff=""
-                android:textOn=""
-                android:thumb="@drawable/thumb"
-                android:track="@drawable/track" />
+                android:layout_alignParentRight="true" />
         </RelativeLayout>
 
         <View style="@style/divideline3" />
 
         <LinearLayout
-            android:id="@+id/ll_server_address"
+            android:id="@+id/ll_auto_answertime"
             style="@style/scroll_linearlayout"
             android:orientation="vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/server_address"
+                android:text="@string/auto_answertime"
                 android:textColor="@color/black"
                 android:textSize="@dimen/sp_18" />
 
             <TextView
-                android:id="@+id/tv_serveraddress"
+                android:id="@+id/tv_auto_answertime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="服务器地址"
-                android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_16" />
-        </LinearLayout>
-
-        <View style="@style/divideline3" />
-
-        <LinearLayout
-            android:id="@+id/ll_server_port"
-            style="@style/scroll_linearlayout"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/server_port"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_18" />
-
-            <TextView
-                android:id="@+id/tv_serverport"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5060"
-                android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_16" />
-        </LinearLayout>
-        
-        <View style="@style/divideline3" />
-
-        <LinearLayout
-            android:id="@+id/ll_backserver_address"
-            style="@style/scroll_linearlayout"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/backserver_address"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_18" />
-
-            <TextView
-                android:id="@+id/tv_backserveraddress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="备用服务器地址"
-                android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_16" />
-        </LinearLayout>
-        
-        <View style="@style/divideline3" />
-
-        <LinearLayout
-            android:id="@+id/ll_backserver_port"
-            style="@style/scroll_linearlayout"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/backserver_port"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_18" />
-
-            <TextView
-                android:id="@+id/tv_backserverport"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5060"
-                android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_16" />
-        </LinearLayout>
-
-        <View style="@style/divideline3" />
-
-        <LinearLayout
-            android:id="@+id/ll_user_name"
-            style="@style/scroll_linearlayout"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/user_name"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_18" />
-
-            <TextView
-                android:id="@+id/tv_username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="name"
-                android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_16" />
-        </LinearLayout>
-
-        <View style="@style/divideline3" />
-
-        <LinearLayout
-            android:id="@+id/ll_password"
-            style="@style/scroll_linearlayout"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/password"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_18" />
-
-            <TextView
-                android:id="@+id/tv_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="123456"
-                android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_16" />
-        </LinearLayout>
-
-        <View style="@style/divideline3" />
-
-        <LinearLayout
-            android:id="@+id/ll_phone"
-            style="@style/scroll_linearlayout"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/phone"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_18" />
-
-            <TextView
-                android:id="@+id/tv_phone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="110"
-                android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_16" />
-        </LinearLayout>
-
-        <View style="@style/divideline3" />
-
-        <LinearLayout
-            android:id="@+id/ll_show_name"
-            style="@style/scroll_linearlayout"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/show_name"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_18" />
-
-            <TextView
-                android:id="@+id/tv_showname"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="name"
-                android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_16" />
-        </LinearLayout>
-
-        <View style="@style/divideline3" />
-
-        <LinearLayout
-            android:id="@+id/ll_local_domainname"
-            style="@style/scroll_linearlayout"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/local_domainname"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_18" />
-
-            <TextView
-                android:id="@+id/tv_localdomainname"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="本地域名"
-                android:textColor="@color/gray_ccc"
-                android:textSize="@dimen/sp_16" />
-        </LinearLayout>
-
-        <View style="@style/divideline3" />
-
-        <LinearLayout
-            android:id="@+id/ll_transport"
-            style="@style/scroll_linearlayout"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/transport"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_18" />
-
-            <TextView
-                android:id="@+id/tv_transport"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TCP"
+                android:text="60"
                 android:textColor="@color/gray_ccc"
                 android:textSize="@dimen/sp_16" />
         </LinearLayout>
@@ -295,22 +59,354 @@
         <View style="@style/divideline3" />
 
         <RelativeLayout
-            android:id="@+id/rl_advanced_setting"
+            android:id="@+id/ll_open_unconditional"
             style="@style/scroll_linearlayout"
             android:orientation="vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/advanced_setting"
+                android:text="@string/open_unconditional"
                 android:textColor="@color/black"
                 android:textSize="@dimen/sp_18" />
 
-            <ImageView
-                android:layout_width="@dimen/dp_20"
-                android:layout_height="@dimen/dp_20"
-                android:layout_alignParentRight="true"
-                android:src="@drawable/icon_left" />
+            <CheckBox
+                android:id="@+id/cb_open_unconditional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_busy"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_busy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_busy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_noanswer"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_noanswer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_noanswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_unconditional_turn"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unconditional_turn"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_unconditional_turn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_busy_turn"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/busy_turn"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_busy_turn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_noanswer_turn"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noanswer_turn"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_noanswer_turn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_noanswer_overtime"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noanswer_overtime"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_noanswer_overtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_hotline"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_hotline"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_hotline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_hotline_number"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotline_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_hotline_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_hotline_delaytime"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotline_delaytime"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_hotline_delaytime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_misscall"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_misscall"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_misscall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_notregister_call"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notregister_call"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_notregister_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divideline" />
+
+        <View style="@style/divideline2" />
+
+        <LinearLayout
+            android:id="@+id/ll_voicemail_number"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voicemail_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_voicemail_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_route_ring"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/route_ring"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_route_ring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <LinearLayout
+            android:id="@+id/ll_show_calltype"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_calltype"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_show_calltype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRID-PAI-FROM"
+                android:textColor="@color/gray_ccc"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View style="@style/divideline3" />
+
+        <RelativeLayout
+            android:id="@+id/ll_open_userphone"
+            style="@style/scroll_linearlayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_userphone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <CheckBox
+                android:id="@+id/cb_open_userphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
         </RelativeLayout>
     </LinearLayout>
 

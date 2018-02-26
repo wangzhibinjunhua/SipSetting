@@ -61,6 +61,6 @@
 
     <color name="dialog_title">#33000000</color>
     
-    <color name="gray_ccc">#cccccc</color>
+    <color name="gray_ccc">#828282</color>
     <color name="translucence_gray">#4d000000</color>
 </resources>

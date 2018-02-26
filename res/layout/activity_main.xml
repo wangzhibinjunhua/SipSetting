@@ -110,6 +110,33 @@
                     android:text="SIP设定"
                     android:textSize="18sp" />
             </LinearLayout>
+            
+            <View style="@style/divideline3" />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/call_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:src="@drawable/call_icon" />
+
+                <TextView
+                    android:id="@+id/tv_call"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="center_vertical"
+                    android:text="呼叫设置"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <View style="@style/divideline3" />
 

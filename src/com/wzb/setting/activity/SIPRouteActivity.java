@@ -34,9 +34,9 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 	private TextView titleView;
 	private ImageView backView;
 	private RelativeLayout rl_advanced, rl_registerstart;
-	private LinearLayout ll_registerstate, ll_server_address, ll_server_port, ll_user_name, ll_password, ll_phone,
-			ll_show_name, ll_transport, ll_local_domainname;
-	private TextView tv_registerstate, tv_serveraddress, tv_serverport, tv_username, tv_password, tv_phone, tv_showname,
+	private LinearLayout ll_server_address, ll_server_port, ll_backserver_address, ll_backserver_port,
+			ll_user_name, ll_password, ll_phone, ll_show_name, ll_transport, ll_local_domainname;
+	private TextView tv_registerstate, tv_serveraddress, tv_serverport, tv_backserveraddress, tv_backserverport, tv_username, tv_password, tv_phone, tv_showname,
 			tv_transport, tv_localdomainname;
 	private Switch switch_register;
 
@@ -81,9 +81,10 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 		rl_advanced = (RelativeLayout) findViewById(R.id.rl_advanced_setting);
 		rl_advanced.setOnClickListener(this);
 
-		ll_registerstate = (LinearLayout) findViewById(R.id.ll_registerstate);
 		ll_server_address = (LinearLayout) findViewById(R.id.ll_server_address);
 		ll_server_port = (LinearLayout) findViewById(R.id.ll_server_port);
+		ll_backserver_address = (LinearLayout) findViewById(R.id.ll_backserver_address);
+		ll_backserver_port = (LinearLayout) findViewById(R.id.ll_backserver_port);
 		ll_user_name = (LinearLayout) findViewById(R.id.ll_user_name);
 		ll_password = (LinearLayout) findViewById(R.id.ll_password);
 		ll_phone = (LinearLayout) findViewById(R.id.ll_phone);
@@ -94,6 +95,8 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 		tv_registerstate = (TextView) findViewById(R.id.tv_registerstate);
 		tv_serveraddress = (TextView) findViewById(R.id.tv_serveraddress);
 		tv_serverport = (TextView) findViewById(R.id.tv_serverport);
+		tv_backserveraddress = (TextView) findViewById(R.id.tv_backserveraddress);
+		tv_backserverport = (TextView) findViewById(R.id.tv_backserverport);
 		tv_username = (TextView) findViewById(R.id.tv_username);
 		tv_password = (TextView) findViewById(R.id.tv_password);
 		tv_phone = (TextView) findViewById(R.id.tv_phone);
@@ -101,9 +104,10 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 		tv_transport = (TextView) findViewById(R.id.tv_transport);
 		tv_localdomainname = (TextView) findViewById(R.id.tv_localdomainname);
 
-		// ll_registerstate.setOnClickListener(this);
 		ll_server_address.setOnClickListener(this);
 		ll_server_port.setOnClickListener(this);
+		ll_backserver_address.setOnClickListener(this);
+		ll_backserver_port.setOnClickListener(this);
 		ll_user_name.setOnClickListener(this);
 		ll_password.setOnClickListener(this);
 		ll_phone.setOnClickListener(this);
@@ -128,6 +132,8 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 		switch_register.setOnCheckedChangeListener(this);
 		tv_serveraddress.setText(SystemShare.getSettingString(mContext, sp_name, Constant.serveraddress));
 		tv_serverport.setText(SystemShare.getSettingString(mContext, sp_name, Constant.serverport));
+		tv_backserveraddress.setText(SystemShare.getSettingString(mContext, sp_name, Constant.backserveraddress));
+		tv_backserverport.setText(SystemShare.getSettingString(mContext, sp_name, Constant.backserverport));
 		tv_username.setText(SystemShare.getSettingString(mContext, sp_name, Constant.username));
 		tv_password.setText(SystemShare.getSettingString(mContext, sp_name, Constant.password));
 		tv_phone.setText(SystemShare.getSettingString(mContext, sp_name, Constant.phone));
@@ -153,6 +159,12 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 		case R.id.ll_server_port: // 服务器端口
 			DialogUtil.showdialog(mContext, R.string.server_port, tv_serverport, sp_name, Constant.serverport);
 			break;
+		case R.id.ll_backserver_address: // 备用服务器地址
+			DialogUtil.showdialog(mContext, R.string.backserver_address, tv_backserveraddress, sp_name, Constant.backserveraddress);
+			break;
+		case R.id.ll_backserver_port: // 备用服务器端口
+			DialogUtil.showdialog(mContext, R.string.backserver_port, tv_backserverport, sp_name, Constant.backserverport);
+			break;
 		case R.id.ll_user_name: // 用户名
 			DialogUtil.showdialog(mContext, R.string.user_name, tv_username, sp_name, Constant.username);
 			break;
@@ -171,7 +183,8 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 		
 			break;
 		case R.id.ll_transport: // 传输类型
-			DialogUtil.showdialog(mContext, R.string.transport, tv_transport, sp_name, tv_transport.getText().toString(), 1);
+			DialogUtil.showdialog(mContext, R.string.transport, tv_transport, sp_name,
+					tv_transport.getText().toString(), 1);
 			break;
 		case R.id.rl_advanced_setting: // 高级设置
 			into_advanced();
@@ -193,10 +206,9 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 				domain = tv_serveraddress.getText().toString();
 				transport = tv_transport.getText().toString();
 				displayname = tv_showname.getText().toString();
-				port=tv_serverport.getText().toString();
-				if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password) 
-						|| TextUtils.isEmpty(domain) || TextUtils.isEmpty(transport)
-						|| TextUtils.isEmpty(port)) {
+				port = tv_serverport.getText().toString();
+				if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password) || TextUtils.isEmpty(domain)
+						|| TextUtils.isEmpty(transport) || TextUtils.isEmpty(port)) {
 					ToastUtil.showToast(mContext, "数值不能为空！", 1);
 					switch_register.setOnCheckedChangeListener(null);
 					switch_register.setChecked(false);
@@ -238,6 +250,7 @@ public class SIPRouteActivity extends BaseActivity implements OnClickListener, O
 			break;
 		}
 	}
+
 
 	private void into_advanced() {
 		Intent intent = new Intent(this, AdvancedSettingActivity.class);

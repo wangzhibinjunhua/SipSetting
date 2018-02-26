@@ -51,7 +51,7 @@ public class DialogUtil {
 				if (edit_text.getText().toString().equals("")) {
 					ToastUtil.showToast(mContext, dialogtitle.getText().toString() + "不能为空！", Toast.LENGTH_SHORT);
 				} else {
-					//SystemShare.setSettingString(mContext, sp_name, str, text);
+					SystemShare.setSettingString(mContext, sp_name, str, text);
 					textView.setText(text);
 					dialog.dismiss();
 				}

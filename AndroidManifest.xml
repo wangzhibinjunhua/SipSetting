@@ -52,10 +52,22 @@
             android:name=".activity.SIPSettingActivity"
             android:screenOrientation="landscape"/>
         <activity 
+            android:name=".activity.CallSettingActivity"
+            android:screenOrientation="landscape"/>
+        <activity 
             android:name=".activity.SIPRouteActivity"
             android:screenOrientation="landscape"/>
         <activity 
             android:name=".activity.AdvancedSettingActivity"
+            android:screenOrientation="landscape"/>
+        <activity 
+            android:name=".activity.CallServiceActivity"
+            android:screenOrientation="landscape"/>
+        <activity 
+            android:name=".activity.FunctionActivity"
+            android:screenOrientation="landscape"/>
+        <activity 
+            android:name=".activity.CollectRuleActivity"
             android:screenOrientation="landscape"/>
         <receiver
             android:name=".broadcast.CommonReceiver"
